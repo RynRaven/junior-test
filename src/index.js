@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import './index.scss';
 import { ApolloClient, InMemoryCache, ApolloProvider} from "@apollo/client";
 import {POSTS_QUERY} from './components/GraphQL/Queries';
+import { BrowserRouter } from 'react-router-dom';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000/',
@@ -20,9 +21,11 @@ client
 
 ReactDOM.render(
   <React.StrictMode>
-    <ApolloProvider client={client}>
-      <App />
-    </ApolloProvider>,
+    <BrowserRouter>
+      <ApolloProvider client={client}>
+        <App />
+      </ApolloProvider>,
+    </BrowserRouter>,
   </React.StrictMode>,
   document.getElementById('root')
 );

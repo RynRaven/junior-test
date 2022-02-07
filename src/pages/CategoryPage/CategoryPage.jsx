@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './CategoryPage';
-import { Header } from '../Header/Header'
+import Directory from '../../components/Directory/Directory';
+import './CategoryPage.scss';
 
 export class CategoryPage extends Component {
+
     render() {
         return (
             <div id='CategoryPage'>
-                <Header/>
-                <h1>Category Page</h1>
+                <h1>Category name</h1>
+                <Directory/>
             </div>
         );
     }

@@ -7,6 +7,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider} from "@apollo/client";
 import {POSTS_QUERY} from './components/GraphQL/Queries';
 import { BrowserRouter } from 'react-router-dom';
 
+
 const client = new ApolloClient({
   uri: 'http://localhost:4000/',
   cache: new InMemoryCache()

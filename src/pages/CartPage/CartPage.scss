@@ -1,0 +1,104 @@
+.CartPage {
+    font-family: var(--font-family);
+
+    &-heading {
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 5rem 8rem 3rem;
+    }
+
+    &__container {
+        
+        &_product {
+            border-top: 1px #E5E5E5 solid;
+            margin: 1rem 15rem 1rem 8rem;
+            display: flex;
+            justify-content: space-between;
+            
+            &-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: .5rem;
+
+                &-info {
+                    display: flex;
+                    flex-direction: column;
+
+                    h1, h3 {
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                    h3{
+                        font-weight: 400;
+                    }
+                }
+
+                h4 {
+                    font-family: var(--font-family-2n);
+                    font-size: 24px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                }
+
+                &-attributes {
+                    display: flex;
+
+                    span {
+                        width: 55px;
+                        height: 40px;
+                        border: 1px gray solid;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: .5rem 1rem 0 0;
+                            h4 {
+                                font-size: 16px;
+                                font-weight: 400;
+                            }
+                    }
+                }
+            }
+
+            &-right {
+                display: flex;
+                padding: .5rem;
+                
+                &-count {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: .5rem;
+
+                    span {
+                        width: 40px;
+                        height: 40px;
+                        border: 1px gray solid;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 34px;
+                        font-weight: 200;
+                    }
+                    
+                    h1 {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                }
+                
+                &-image {
+                    height: 185px;
+
+                    img {
+                        width: 140px;
+                        height: 185px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './ProductCard.scss';
 
 export class ProductCard extends Component {
     render() {
         return (
+            <Link to="/ProductPage">
             <div className="ProductCard">
                 <img className='ProductCard-image' 
                     src={this.props.image} alt="image" 
@@ -24,6 +26,7 @@ export class ProductCard extends Component {
                     </div>
                 </div>
             </div>
+            </Link>
         ) 
     }
 }

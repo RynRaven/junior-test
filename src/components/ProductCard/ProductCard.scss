@@ -4,12 +4,12 @@
     width: 386px;
     height: 444px;
     font-family: var(--font-family);
-    background-color: rgb(255, 247, 231);
+    //background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
     
-
     &-image {
         height: 330px;
         width: 354px;
@@ -17,7 +17,6 @@
     }
 
     &-info {
-
         h2 {
             font-weight: 300;
             font-size: 18px;
@@ -28,6 +27,40 @@
             font-weight: 500;
             font-size: 18px;
             line-height: 28.8px;
+        }
+
+        &-addcart {
+            a {
+                span {
+                    position: absolute;
+                    bottom: 4.5rem;
+                    right: 2rem;
+                    width: 60px;
+                    height: 60px;
+                    background-color: var(--color-accent);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    visibility: hidden;
+                    
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: 5px 10px 20px rgb(194, 194, 194);
+
+        .ProductCard-info-addcart {
+            a{
+                span{
+                    visibility: visible;
+                }
+            }
         }
     }
 }

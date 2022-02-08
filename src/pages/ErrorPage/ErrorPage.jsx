@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './ErrorPage.scss';
 
 export class ErrorPage extends Component {
   render() {
     return (
-    <div>
-      <h1>404 NOT FOUND</h1>
-    </div>
+      <div className='ErrorPage'>
+        <h1>Page you looking for does not exist</h1>
+      </div>
     );
   }
 }

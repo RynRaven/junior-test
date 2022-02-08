@@ -8,6 +8,7 @@ export class Directory extends Component {
         super();
 
         this.state = {
+            //need data from query
             sections: [
                 {
                     tittle: 'thing1',
@@ -33,6 +34,18 @@ export class Directory extends Component {
                     imageUrl: 'https://images.pexels.com/photos/8066715/pexels-photo-8066715.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', 
                     id: 4
                 },
+                {
+                    tittle: 'thing5',
+                    price: '200',
+                    imageUrl: 'https://images.pexels.com/photos/8066715/pexels-photo-8066715.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', 
+                    id: 5
+                },
+                {
+                    tittle: 'thing6',
+                    price: '1500',
+                    imageUrl: 'https://images.pexels.com/photos/8066715/pexels-photo-8066715.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', 
+                    id: 6
+                },
             ]
         }
     }
@@ -40,7 +53,8 @@ export class Directory extends Component {
     return (
         <div className='directory'>
             { this.state.sections.map(({tittle, price, id, imageUrl}) => (
-                <ProductCard key={id} name={tittle} price={price} image={imageUrl}/>
+                <ProductCard key={id} name={tittle} price={price} image={imageUrl}
+                href={id}/>
             )
                 )}
 

@@ -10,7 +10,6 @@ class App extends Component {
     return (
       <div className="App">
         <Routing/>
-        <h1>Hi</h1>
       </div>
     )
   }

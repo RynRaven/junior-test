@@ -8,7 +8,9 @@ export class CategoryPage extends Component {
         return (
             <div id='CategoryPage'>
                 <h1>Category name</h1>
-                <Directory/>
+                <div className='CategoryPage'>
+                    <Directory/>
+                </div>
             </div>
         );
     }

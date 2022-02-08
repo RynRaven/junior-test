@@ -5,11 +5,12 @@ import './ProductCard.scss';
 export class ProductCard extends Component {
     render() {
         return (
-            <Link to="/ProductPage">
             <div className="ProductCard">
-                <img className='ProductCard-image' 
+                <Link to="/ProductPage">
+                    <img className='ProductCard-image' 
                     src={this.props.image} alt="image" 
                 />
+                </Link>
                 <div className='ProductCard-info'>
                     <h2 className='ProductCard-info-tittle'>
                         {this.props.name}
@@ -26,7 +27,6 @@ export class ProductCard extends Component {
                     </div>
                 </div>
             </div>
-            </Link>
         ) 
     }
 }

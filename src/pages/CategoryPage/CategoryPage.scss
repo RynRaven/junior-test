@@ -1,9 +1,16 @@
 #CategoryPage {
-
     h1 {
         font-weight: 400;
         font-size: 42px;
         font-family: var(--font-family);
         padding: 3rem 8rem 1rem;
     }
+
+}
+
+.CategoryPage {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 5rem; 
+    justify-content: space-evenly;
 }

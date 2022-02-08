@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
 import { ApolloClient, InMemoryCache, ApolloProvider} from "@apollo/client";
-import {POSTS_QUERY} from './components/GraphQL/Queries';
+import {PROD_QUERY, ITEM_QUERY} from './components/GraphQL/Queries';
 import { BrowserRouter } from 'react-router-dom';
 
 
@@ -16,7 +16,7 @@ const client = new ApolloClient({
 //Running query outside React
 client 
   .query({
-    query: POSTS_QUERY
+    query: ITEM_QUERY
   })
   .then (res => console.log(res));
 
